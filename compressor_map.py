@@ -21,6 +21,12 @@ file_path = "Compressor_operation_map.txt"
 df = pd.read_csv(file_path, sep="\t")
 df.columns = ['mdot_ref', 'T0_ratio', 'p0_ratio']
 
+'''
+#If colab is being used
+file_path = "/content/Compressor_operation_map.txt"
+df = pd.read_csv(file_path, sep="\t")
+df.columns = ['mdot_ref', 'T0_ratio', 'p0_ratio']
+'''
 # Defining Variables
 
 scale_result = -1.0         # Will store the maximum (feasible) scale
